@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Go Go FUTURE_LogIn</title>
+        <link rel="icon" href="logo.png" type="image/png">
+        
+        <style>
+            .brand-logo{
+                align-items: center;
+            }
+            .loginDiv{
+                text-align: center;
+                background-color:antiquewhite;
+                font-size: 200%;
+            }
+            button{
+                padding: 7px 30px;
+                background-color: steelblue;
+                color: white;
+                font-size: 20px;
+                border-radius: 7px;
+            }
+            .footer-end{
+            text-align: center;
+            background-color:rgb(182, 175, 175);
+        }
+            
+        </style>
+    </head>
+    <body>
+        <div></div>
+        <div class="brand-logo">
+            <img id="image" src="" >
+        </div>
+        
+
+        <div class="loginDiv">
+            
+            <h1><strong>Login</strong></h1>
+            <form  method="post" name="form1">
+                <label for="username">username:<input type="text" name="username"></label><br>
+                <br>
+                  
+    
+                <label for="password">password:<input type="password" name="password"></label><br>
+                 <br>
+                <button onclick="popup()">Submit</button>
+            </form>
+            </fieldset>
+            
+        </div><hr>
+        
+        <footer>
+            <div class="footer-start">
+                <img src="logo.png" height="200" width="200" style="align-content: center;">
+                <table align="center" cellspacing="50">
+                    <tr>
+                        <td>India</td>
+                        <td>China</td>
+                        <td>France</td>
+                        <td>Canada</td>
+                        <td>Tailand</td>
+                        <td>Japan</td>
+                        <td>Pakistan</td>
+                        <td>Poland</td>
+                        <td>Unites States</td>
+                        <td>Turkey</td>
+                        <td></td>
+                    </tr>
+                </table>
+    
+            </div>
+            <div class="footer-end">
+                <small>
+                    <p><b>conditions of sales&service.<br>Privacy notice</b></p>
+                    <p><b>&copy; 2020-2023, all  copyrights reserved.Go GO FUTURE</b></p>
+                </small>
+            </div>
+        </footer>
+        <script>
+            function popup() {
+                var empt = document.forms["form1"]["username"].value;
+                var empt2 = document.forms["form1"]["password"].value;
+                if (empt == "")
+                {
+                    alert("Please enter your name.");
+
+                }
+                else if (empt2 == "")
+                {
+                    alert("Please enter your password.");
+
+                }
+                else 
+                {
+                    alert('Successfully loggedin your account.');
+
+                }
+            }
+
+        </script>
+        
+    </body>
+</html>
